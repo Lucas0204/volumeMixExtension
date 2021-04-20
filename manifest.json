@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Volume Mixer",
+    "version": "0.1",
+    "icons": {
+        "16": "./icons/mixer_logo-16.png",
+        "24": "./icons/mixer_logo-24.png",
+        "32": "./icons/mixer_logo-32.png",
+        "48": "./icons/mixer_logo-48.png",
+        "128": "./icons/mixer_logo-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./scripts/content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "./icons/mixer_logo.png",
+        "default_popup": "./popup/popup.html"
+    }
+}
