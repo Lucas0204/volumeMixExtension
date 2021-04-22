@@ -7,4 +7,4 @@ function setVolume(volume) {
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     setVolume(request.newVolume)
- })
+})
